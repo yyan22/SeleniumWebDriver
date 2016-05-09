@@ -19,7 +19,7 @@ Submit an order for an Apple iPhone4s 16GB SIM-Free - Black (known issue with St
 (3) UpdateAccountTestCase.java:
 Verify updating your account details is saved and retrieved after logging out and back in using the My Account link. 
 
-Please note: This test case has not been implemented. The reason it is not implemented is because I registered online but have not received any confirmation email. As long as I get the link to login, I will work on this test case immediately.
+Please note: This test case has not been implemented. The reason it is not implemented is because I registered online but have not received any confirmation email. As long as I get the link to login, I will get to this test case immediately.
 
 (4) EmptyCartMsgTestCase.java:
 Verify removing all items from your cart produces an empty cart message.
