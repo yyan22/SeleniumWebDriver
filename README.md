@@ -1,5 +1,5 @@
 Testing Environment:
-1. Programming language: Java
+1. Programming language: Java.
 2. IDE: Eclipse with Selenium WebDriver set up properly.
 3. Browser: Firefox.
 
