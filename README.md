@@ -3,7 +3,8 @@ Testing Environment:
 2. IDE: Eclipse with Selenium WebDriver set up properly.
 3. Browser: Firefox.
 
-All these 4 classes are from the same package named automationFramework.
+All these 4 classes are from the same package named automationFramework:
+
 1. OnlineStorePage.java
 This is the basic class for page objects pattern.
 
