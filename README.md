@@ -10,6 +10,7 @@ This is the basic class for page objects pattern.
 
 (2) SubmitOrderTestCase.java:
 Submit an order for an Apple iPhone4s 16GB SIM-Free - Black (known issue with State drop-down, selecting Country is adequate) and verify the Total Price: given is correct (assume shipping cost is correct based on your choice). You may assume prices shown on product pages are the correct price. 
+
 (3) UpdateAccountTestCase.java:
 Verify updating your account details is saved and retrieved after logging out and back in using the My Account link. 
 
