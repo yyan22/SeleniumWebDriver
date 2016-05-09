@@ -1,0 +1,12 @@
+1. Fails to test when user does not have permission to add or modify recipients.
+
+2. Test dependency: should test canReceiveMessage(message, currentUser, recipient) before test add(message).
+
+3. assertEquals(messages.size(), 2) will always return true, which has nothing to do with asserting we pass two messages to the function. 
+Instead, it should be like: assertEquals(successfulMessages.size()+failedMessages.size(), 2).
+
+Other test scenarios include:
+
+1. Test when message exceeds limits.
+
+2. Test when empty message is sent.
