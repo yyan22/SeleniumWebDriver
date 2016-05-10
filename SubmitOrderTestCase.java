@@ -67,7 +67,7 @@ public class SubmitOrderTestCase {
     WebElement zip = driver.findElement(By.id("wpsc_checkout_form_8"));
     page.typeUserInformation(zip, "78759");
     WebElement phone = driver.findElement(By.id("wpsc_checkout_form_18"));
-    page.typeUserInformation(phone, "111-111-1111");
+    page.typeUserInformation(phone, "512-111-1111");
     
     driver.findElement(By.id("shippingSameBilling")).click();
     
