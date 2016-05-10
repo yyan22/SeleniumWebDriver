@@ -76,6 +76,8 @@ public class SubmitOrderTestCase {
     Assert.assertEquals(actualPriceElm.getText(), listedPrice);
     
     driver.findElement(By.cssSelector("span > input[name=\"submit\"]")).click();
+    
+    System.out.println("Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.");
   }
 
   @After
