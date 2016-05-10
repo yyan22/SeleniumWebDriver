@@ -30,6 +30,12 @@ Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.
 Account details are saved and retrieved.
 Removing all items from your cart produces an empty cart message.
 
+I have noticed two issues:
+
+1. The State drop-down is not working either when placing an order or updating account details.
+
+2. When updating account details, sometimes several fields do not get saved, such as Last Name and City, which causes the test case to fail.
+
 Automation Excecise 2 contains one file:
 
 NearestStationTestCase.java
