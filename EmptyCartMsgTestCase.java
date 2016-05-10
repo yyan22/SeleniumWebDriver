@@ -49,6 +49,7 @@ public class EmptyCartMsgTestCase {
 	  String actualMessage = driver.findElement(By.cssSelector("div#content > article#post-29 > div.entry-content")).getText();
 	  String expectedMessage = "Oops, there is nothing in your cart.";
 	  Assert.assertEquals(actualMessage, expectedMessage);
+	  System.out.println("Removing all items from your cart produces an empty cart message.");
   }
 
   @After
