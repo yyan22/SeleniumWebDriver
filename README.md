@@ -1,14 +1,12 @@
-Testing Environment:
+Developing Environment:
 
 1. Programming language: Java.
 
-2. IDE: Eclipse with Selenium WebDriver set up properly.
+2. IDE: Eclipse with Selenium WebDriver library and Json library set up properly.
 
 3. Browser: Firefox.
 
-Automation Exercise 1 contains 4 files: 
-
-All these 4 classes are from the same package named automationFramework.
+Automation Exercise 1 contains six classes under the package named automationFramework.
 
 (1) OnlineStorePage.java:
 This is the basic class for page objects pattern.
@@ -19,16 +17,24 @@ Submit an order for an Apple iPhone4s 16GB SIM-Free - Black (known issue with St
 (3) UpdateAccountTestCase.java:
 Verify updating your account details is saved and retrieved after logging out and back in using the My Account link. 
 
-Please note: This test case has not been implemented. The reason it is not implemented is because I registered online but have not received any confirmation email. As long as I get the link to login, I will get to this test case immediately.
-
 (4) EmptyCartMsgTestCase.java:
 Verify removing all items from your cart produces an empty cart message.
 
-Automation Excecise 2 contains 1 file:
+(5) OnlineStoreTestSuite.java:
+The test suite class contains three files to be tested: SubmitOrderTestCase.java, UpdateAccountTestCase.java, EmptyCartMsgTestCase.java.
+
+(6) OnlineStoreTestRunner.java:
+This file is used to run the test suite. 
+If the test suite is successfully run, the console window should print out three sentenses:
+Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.
+Account details are saved and retrieved.
+Removing all items from your cart produces an empty cart message.
+
+Automation Excecise 2 contains one file:
 
 NearestStationTestCase.java
 
-It performs 2 tasks:
+It performs two tasks:
 
 (1) Query for nearest stations to Austin, TX that are part of the "ChargePoint Network". Verify that "HYATT AUSTIN" appears in the
 results. Store/save the Station Id of the HYATT AUSTIN station.
