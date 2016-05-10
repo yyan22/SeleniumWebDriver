@@ -67,9 +67,12 @@ public class UpdateAccountTestCase {
     page.typeUserInformation(phoneElm, "512-111-1111");
     String phone_saved = "512-111-1111";
     
-    driver.findElement(By.id("shippingSameBilling")).click();
+    boolean shippingSameBilling = driver.findElement(By.id("shippingSameBilling")).isSelected();
+    if (!shippingSameBilling) {   	
+    	driver.findElement(By.id("shippingSameBilling")).click();
+    }
     
-    // Uncheck "Same as billing address" check box to verify billing information is the same as shipping information
+    // Toggle "Same as billing address" check box to verify billing information is the same as shipping information
     driver.findElement(By.id("shippingSameBilling")).click();
     
     // Verify billing address is the same as shipping address after the "Same as billing address" check box is checked
@@ -127,8 +130,8 @@ public class UpdateAccountTestCase {
     String phone = driver.findElement(By.id("wpsc_checkout_form_18")).getAttribute("value");
     assertEquals(phone_saved, phone);
     
-    boolean shippingSameBilling = driver.findElement(By.id("shippingSameBilling")).isSelected();
-    assertFalse(shippingSameBilling);
+    shippingSameBilling = driver.findElement(By.id("shippingSameBilling")).isSelected();
+    assertTrue(shippingSameBilling);
     
     System.out.println("Account details are saved and retrieved.");
   }
