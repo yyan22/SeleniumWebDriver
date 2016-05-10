@@ -1,6 +1,7 @@
 package automationFramework;
 
 import java.util.concurrent.TimeUnit;
+
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -39,8 +40,9 @@ public class SubmitOrderTestCase {
     
     driver.findElement(By.linkText("Go to Checkout")).click();
     driver.findElement(By.cssSelector("a.step2 > span")).click();
+
     new Select(driver.findElement(By.id("current_country"))).selectByVisibleText("USA");
-    driver.findElement(By.cssSelector("option[value=\"US\"]")).click();
+    
     WebElement stateForShipping = driver.findElement(By.name("collected_data[15]"));
     page.typeUserInformation(stateForShipping, "TX");
     WebElement zipForShipping = driver.findElement(By.name("wpsc_submit_zipcode"));
@@ -59,8 +61,9 @@ public class SubmitOrderTestCase {
     page.typeUserInformation(city, "Austin");
     WebElement state = driver.findElement(By.id("wpsc_checkout_form_6"));
     page.typeUserInformation(state, "TX");
+    
     new Select(driver.findElement(By.id("wpsc_checkout_form_7"))).selectByVisibleText("USA");
-    driver.findElement(By.cssSelector("#wpsc_checkout_form_7 > option[value=\"US\"]")).click();
+    
     WebElement zip = driver.findElement(By.id("wpsc_checkout_form_8"));
     page.typeUserInformation(zip, "78759");
     WebElement phone = driver.findElement(By.id("wpsc_checkout_form_18"));
@@ -81,4 +84,3 @@ public class SubmitOrderTestCase {
   }
 
 }
-
