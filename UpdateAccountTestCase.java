@@ -24,7 +24,7 @@ public class UpdateAccountTestCase {
 
   @Test
   public void testUpdateAccount() throws Exception {	  
-	page.open(baseUrl);
+    page.open(baseUrl);
 	
 	// Go to "My Account" page
     driver.findElement(By.cssSelector("div#account > a.account_icon")).click();
