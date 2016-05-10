@@ -20,7 +20,7 @@ public class SubmitOrderTestCase {
 
   @Test
   public void testSubmitOrder() throws Exception {
-	page.open("http://store.demoqa.com");
+    page.open("http://store.demoqa.com");
 	
     WebElement element = driver.findElement(By.linkText("Product Category"));
     
