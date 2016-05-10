@@ -26,7 +26,7 @@ public class UpdateAccountTestCase {
   public void testUpdateAccount() throws Exception {	  
     page.open(baseUrl);
 	
-	// Go to "My Account" page
+    // Go to "My Account" page
     driver.findElement(By.cssSelector("div#account > a.account_icon")).click();
     
     // Login
@@ -69,6 +69,27 @@ public class UpdateAccountTestCase {
     
     driver.findElement(By.id("shippingSameBilling")).click();
     
+    // Uncheck "Same as billing address" check box to verify billing information is the same as shipping information
+    driver.findElement(By.id("shippingSameBilling")).click();
+    
+    // Verify billing address is the same as shipping address after the "Same as billing address" check box is checked
+    String firstName_billing = driver.findElement(By.id("wpsc_checkout_form_11")).getAttribute("value");
+    assertEquals(firstName_saved, firstName_billing);  
+    
+    String lastName_billing = driver.findElement(By.id("wpsc_checkout_form_12")).getAttribute("value");
+    assertEquals(lastName_saved, lastName_billing);
+    
+    String address_billing = driver.findElement(By.id("wpsc_checkout_form_13")).getAttribute("value");
+    assertEquals(address_saved, address_billing);
+    
+    String city_billing = driver.findElement(By.id("wpsc_checkout_form_14")).getAttribute("value");
+    assertEquals(city_saved, city_billing);
+
+    String zip_billing = driver.findElement(By.id("wpsc_checkout_form_17")).getAttribute("value");
+    assertEquals(zip_saved, zip_billing);
+    
+    driver.findElement(By.id("shippingSameBilling")).click();
+    
     // Save account details
     driver.findElement(By.name("submit")).click();
     
@@ -107,7 +128,9 @@ public class UpdateAccountTestCase {
     assertEquals(phone_saved, phone);
     
     boolean shippingSameBilling = driver.findElement(By.id("shippingSameBilling")).isSelected();
-    assertTrue(shippingSameBilling);
+    assertFalse(shippingSameBilling);
+    
+    System.out.println("Account details are saved and retrieved.");
   }
 
   @After
