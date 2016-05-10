@@ -1,0 +1,70 @@
+
+Question 1:
+
+Login:
+
+1. What if account the user trying to login does not exist? 
+
+2. Should we add the “Remember Me” checkbox?
+
+Link Location:
+
+1. What does each page for the links look like?
+
+2. What does the search box on the upper right corner do? What characters are allowed?
+
+Profile Page:
+
+1. For the search functionality, how many results should we display per page? What is the default order by column? 
+Should we allow the user to click the table header to order by different columns?
+
+2. Is the Linked Account clickable? Is it supposed to redirect user to their FaceBook homepage? 
+
+Edit Profile:
+
+1. If we allow the CSR to edit any user's profile, should be audit their behavior?
+
+2. Why is the “Name” field a drop-down list? Do we save all the names the user has used before?
+
+3. Is there maximum length for the “About” text area?
+
+4. Should be change the Language text field to a multi-select drop-down list?
+
+5. What is the maximum image size for the profile photo?
+
+Settings Page:
+
+1. What happens if the user removes the only Linked Account?
+
+2. When the user clicks “Deactivate My HomeAway Profile”, can the user herself see her own profile? 
+Should we mark her account as deleted? Should we allow her to change mind and activate her profile in the future? 
+
+Reset Password:
+
+1. Should we distinguish uppercase and lowercase characters? 
+
+2. Do we allow special characters? If so, what special characters do we allowed? 
+
+3. Can the password be reused? If not, what is the interval? One year?
+
+4. For security reason, should we require user to enter their old password before allowing them to save new password?
+
+Question 2:
+
+I feel like the following 4 quesitons are more important than others:
+
+1. What if account the user trying to login does not exist? 
+This could happen when the user thought they have registered with HomeAway before, while actually they have not. 
+If we do not resolve this issue, the user may get confused.
+
+2. What does the search box on the upper right corner do? What characters are allowed?
+This question relates to the functionality. 
+The developers will not be able work on this functionality until they are clear on its behavior.
+
+3. If we allow the CSR to edit any user's profile, should be audit their behavior?
+This is important because the CSR could misuse their authority if we do not keep the record history.
+
+4. When the user clicks “Deactivate My HomeAway Profile”, can the user herself see her own profile? 
+Should we mark her account as deleted? Should we allow her to change mind and activate her profile in the future? 
+This is also important because our client matters.
+The user should receive warm welcome back whenever they change their mind, in my humble opinion. 
