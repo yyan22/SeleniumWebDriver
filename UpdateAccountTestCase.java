@@ -44,47 +44,47 @@ public class UpdateAccountTestCase {
         WebElement firstNameElm = driver.findElement(By.id("wpsc_checkout_form_2"));
         page.typeUserInformation(firstNameElm, "fTest");
         String firstName_saved = "fTest";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         WebElement lastNameElm = driver.findElement(By.id("wpsc_checkout_form_3"));
         page.typeUserInformation(lastNameElm, "lTest");
         String lastName_saved = "lTest";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         WebElement addressElm = driver.findElement(By.id("wpsc_checkout_form_4"));
         page.typeUserInformation(addressElm, "111 aTest St");
         String address_saved = "111 aTest St";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         WebElement cityElm = driver.findElement(By.id("wpsc_checkout_form_5"));
         page.typeUserInformation(cityElm, "Austin");
         String city_saved = "Austin";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         new Select(driver.findElement(By.id("wpsc_checkout_form_7"))).selectByVisibleText("USA");
         String country_saved = "USA";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         WebElement zipElm = driver.findElement(By.id("wpsc_checkout_form_8"));
         page.typeUserInformation(zipElm, "78759");
         String zip_saved = "78759";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         WebElement phoneElm = driver.findElement(By.id("wpsc_checkout_form_18"));
         page.typeUserInformation(phoneElm, "512-111-1111");
         String phone_saved = "512-111-1111";
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         WebElement shippingSameBillingElm = driver.findElement(By.id("shippingSameBilling"));
         boolean shippingSameBilling = shippingSameBillingElm.isSelected();
         if (!shippingSameBilling) {   	
     	    shippingSameBillingElm.click();
         }
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         // Toggle "Same as billing address" check box to verify billing information is the same as shipping information
         shippingSameBillingElm.click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         // Verify billing address is the same as shipping address after the "Same as billing address" check box is checked
         String firstName_billing = driver.findElement(By.id("wpsc_checkout_form_11")).getAttribute("value");
@@ -102,18 +102,18 @@ public class UpdateAccountTestCase {
         assertEquals(zip_saved, zip_billing);
     
         shippingSameBillingElm.click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         
         // Save account details
         WebElement submitElem = driver.findElement(By.name("submit"));
         wait.until(elementToBeClickable(submitElem));
         page.submit(submitElem);
     
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         // Logout
         page.logout();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     
         // Log back in
         page.login();
