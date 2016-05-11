@@ -17,15 +17,15 @@ import org.junit.Test;
 public class NearestStationTestCase {
  
     @Before
-	public void setUp() throws Exception {		
-	}
+    public void setUp() throws Exception {		
+    }
 
-	@After
-	public void tearDown() throws Exception {
-	}
+    @After
+    public void tearDown() throws Exception {
+    }
 
-	@Test
-	public void testHyattAustinExists() throws Exception {
+    @Test
+    public void testHyattAustinExists() throws Exception {
 		try {
 			String apiKey = "t4oUJLrv5ERXYb6rfvKgcAUVcY6uVCLABz2MiTBo";
 			
