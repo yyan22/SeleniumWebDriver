@@ -80,7 +80,7 @@ public class SubmitOrderTestCase {
     	page.submit(submitElem);
     
     	System.out.println("Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.");
-  	}
+    }
 
     @After
     public void tearDown() throws Exception {
