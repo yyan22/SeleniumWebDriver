@@ -3,7 +3,6 @@ package automationFramework;
 import org.openqa.selenium.*;
 
 public class OnlineStorePage {
-
 	protected WebDriver driver;
 	protected JavascriptExecutor executor;
 	
