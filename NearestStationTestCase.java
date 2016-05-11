@@ -47,6 +47,8 @@ public class NearestStationTestCase {
 	        }
             }
 	    assertTrue("HYATT AUSTIN station exists", exist);
+	    System.out.println("\"HYATT AUSTIN\" appears in the results.");
+	    
 	    closeConnection(conn);
 			
 	    // Use the station ID to get query the API and return the street address of that station
@@ -67,7 +69,9 @@ public class NearestStationTestCase {
 	    String zip = station.getString("zip");
 	    assertEquals("78704", zip);
 	    
+	    System.out.println("the station address is 208 Barton Springs, Austn, TX 78704.");
 	    closeConnection(conn);
+	    
 	} 
         catch (MalformedURLException e) {
             e.printStackTrace();
