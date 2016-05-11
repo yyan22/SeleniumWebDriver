@@ -14,6 +14,7 @@ public class EmptyCartMsgTestCase {
         driver = new FirefoxDriver();
 	page = new OnlineStorePage(driver); 
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().window().maximize();
     }
 
     @Test
