@@ -27,10 +27,10 @@ public class NearestStationTestCase {
     @Test
     public void testHyattAustinExists() throws Exception {
 		try {
-			String apiKey = "t4oUJLrv5ERXYb6rfvKgcAUVcY6uVCLABz2MiTBo";
+		    String apiKey = "t4oUJLrv5ERXYb6rfvKgcAUVcY6uVCLABz2MiTBo";
 			
 			// Query for nearest stations to Austin, TX that are part of the "ChargePoint Network"
-			String urlStr = "http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key="+apiKey+"&location=AUSTIN,TX&env_network=ChargePoint%20Network";
+		    String urlStr = "http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key="+apiKey+"&location=AUSTIN,TX&env_network=ChargePoint%20Network";
 			URL url = new URL(urlStr);
 			HttpURLConnection conn = getConnection(url);
 			JSONObject nearestStations = makeApiCall(url);
