@@ -19,6 +19,7 @@ public class SubmitOrderTestCase {
     page = new OnlineStorePage(driver);
     baseUrl = "http://store.demoqa.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.manage().window().maximize();
   }
 
   @Test
