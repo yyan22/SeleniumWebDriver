@@ -34,13 +34,15 @@ The test suite class contains three files to be tested: SubmitOrderTestCase.java
 
 This file is used to run the test suite. 
 
-If the test suite is successfully run, the console window should print out three messages:
+If the test suite is successfully run, the console window should print out four messages:
 
 Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.
 
 Account details are saved and retrieved.
 
 Removing all items from your cart produces an empty cart message.
+
+Test suite running result: true
 
 Issue noticed:
 
