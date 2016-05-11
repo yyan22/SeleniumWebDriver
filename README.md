@@ -6,6 +6,8 @@ Developing Environment:
 
 3. Browser: Firefox.
 
+**************************************************************************************************************************************
+
 Automation Exercise 1 contains six classes under the package named automationFramework.
 
 (1) OnlineStorePage.java:
@@ -30,11 +32,11 @@ Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.
 Account details are saved and retrieved.
 Removing all items from your cart produces an empty cart message.
 
-I have noticed two issues:
+Issue noticed:
 
-1. The State drop-down is not working either when placing an order or updating account details.
+The State drop-down is not working either when placing an order or updating account details.
 
-2. When updating account details, sometimes several fields do not get saved, such as Last Name and City, which causes the test case to fail.
+**************************************************************************************************************************************
 
 Automation Excecise 2 contains one file:
 
@@ -47,4 +49,6 @@ results. Store/save the Station Id of the HYATT AUSTIN station.
 
 (2) Use the Station ID from previous test to query the API and return the Street Address of that station. Verify the Station Address is 208 Barton Springs, Austin, Texas, USA, 78704.
 
-If you have any questions, please email yanyyj@gmail.com or call 512-952-9800. Thank you!
+**************************************************************************************************************************************
+
+If you have any questions, please send email to yanyyj@gmail.com. Thank you!
