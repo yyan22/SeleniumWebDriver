@@ -1,10 +1,10 @@
 Developing Environment:
 
-1. Programming language: Java.
+(1) Programming language: Java.
 
-2. IDE: Eclipse with Selenium WebDriver library and Json library set up properly.
+(2) IDE: Eclipse with Selenium WebDriver library and Json library set up properly.
 
-3. Browser: Firefox.
+(3) Browser: Firefox.
 
 **************************************************************************************************************************************
 
