@@ -24,7 +24,6 @@ public class OnlineStorePage {
 	elem.clear();
 	elem.sendKeys(userInput);
 	elem.sendKeys(Keys.TAB);
-	//executor.executeScript("$(arguments[0]).change();", elem);
     }
 	
     public void submit(WebElement elem) {
