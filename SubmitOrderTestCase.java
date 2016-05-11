@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class SubmitOrderTestCase {
-  	private WebDriver driver;
+    private WebDriver driver;
   	private OnlineStorePage page;
   	private String baseUrl;
   
