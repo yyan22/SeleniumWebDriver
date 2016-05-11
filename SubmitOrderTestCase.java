@@ -20,7 +20,7 @@ public class SubmitOrderTestCase {
     	baseUrl = "http://store.demoqa.com/";
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	driver.manage().window().maximize();
-  	}
+    }
 
   	@Test
   	public void testSubmitOrder() throws Exception {
