@@ -16,7 +16,7 @@ import org.junit.Test;
 
 public class NearestStationTestCase {
  
-	@Before
+    @Before
 	public void setUp() throws Exception {		
 	}
 
