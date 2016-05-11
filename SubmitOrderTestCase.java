@@ -22,8 +22,8 @@ public class SubmitOrderTestCase {
     	driver.manage().window().maximize();
     }
 
-  	@Test
-  	public void testSubmitOrder() throws Exception {
+    @Test
+    public void testSubmitOrder() throws Exception {
     	page.open(baseUrl);
 	
     	WebElement element = driver.findElement(By.linkText("Product Category"));
@@ -82,9 +82,9 @@ public class SubmitOrderTestCase {
     	System.out.println("Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.");
   	}
 
-  	@After
-  	public void tearDown() throws Exception {
+    @After
+    public void tearDown() throws Exception {
     	page.close();
-  	}
+    }
 
 }
