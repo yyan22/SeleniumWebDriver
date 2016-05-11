@@ -10,13 +10,13 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SubmitOrderTestCase {
     private WebDriver driver;
-  	private OnlineStorePage page;
-  	private String baseUrl;
+    private OnlineStorePage page;
+    private String baseUrl;
   
-  	@Before
-  	public void setUp() throws Exception {
-    	driver = new FirefoxDriver();
-    	page = new OnlineStorePage(driver);
+    @Before
+    public void setUp() throws Exception {
+        driver = new FirefoxDriver();
+        page = new OnlineStorePage(driver);
     	baseUrl = "http://store.demoqa.com/";
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	driver.manage().window().maximize();
