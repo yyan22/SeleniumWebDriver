@@ -3,12 +3,13 @@ package automationFramework;
 import org.openqa.selenium.*;
 
 public class OnlineStorePage {
+    
 	protected WebDriver driver;
 	protected JavascriptExecutor executor;
 	
 	public OnlineStorePage(WebDriver driver) {
-		this.driver = driver;
-		this.executor = (JavascriptExecutor) driver;
+	    this.driver = driver;
+	    this.executor = (JavascriptExecutor) driver;
 	}
 	
 	public void open(String url) {
