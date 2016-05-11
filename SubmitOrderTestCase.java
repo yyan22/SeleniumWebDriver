@@ -76,7 +76,8 @@ public class SubmitOrderTestCase {
     WebElement actualPriceElm = driver.findElement(By.cssSelector("div.review > table.wpsc_checkout_table > tbody > tr.total_item > td.wpsc_totals > span.checkout-shipping > span.pricedisplay"));
     Assert.assertEquals(actualPriceElm.getText(), listedPrice);
     
-    driver.findElement(By.cssSelector("span > input[name=\"submit\"]")).click();
+    WebElement submitElem = driver.findElement(By.cssSelector("span > input[name=\"submit\"]"));
+    page.submit(submitElem);
     
     System.out.println("Apple iPhone4s 16GB SIM-Free - Black order has been successfully placed.");
   }
